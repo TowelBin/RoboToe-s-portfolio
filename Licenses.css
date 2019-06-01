@@ -1,0 +1,75 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Open Sans Light'), local('OpenSans-Light'), url(Open-Sans-Light.woff2) format('woff2');
+}
+body {
+  font-family: 'Open Sans';
+  font-weight: normal;
+  font-style: normal;
+  cursor: default;
+  overflow-wrap: break-word;
+  margin: 0%;
+}
+a {
+  text-decoration: underline;
+  color: rgb(57,181,74);
+  cursor: pointer;
+	 transition: all .2s ease;
+}
+a:hover {
+  color: rgb(43,136,56);
+}
+img {
+  max-width: 100%;
+}
+/* STOP!!! IF YOU VALUE YOUR SANITY, AVERT
+YOUR EYES FROM THE FOLLOWING CODE */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url(office.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-size: 1.5em;
+  overflow-x: hidden;
+  align-items: center;
+  color: rgb(255,255,255);
+  padding: 25px;
+  border-bottom: 10px solid rgb(57, 181, 74);
+}
+/* You can look now*/
+@media screen and (min-width: 500px) {
+  header {
+    font-size: 1.75em;
+  }
+}
+header > * {
+  margin: 10px;
+}
+.logo {
+  border-radius: 50%;
+  display: block;
+}
+.content {
+  margin-left: 35px;
+}
+.content ul {
+  margin-bottom: 35px;
+}
+.content ul li {
+  margin: 5px 0px 5px 0px;
+}
+footer {
+  margin-top: 10px;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  border-top: 1px solid rgb(230, 230, 230);
+}
+footer a {
+  margin: 20px;
+}
